@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.roborazzi)
 }
 
 android {
@@ -60,4 +61,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.junit4)
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
+    testImplementation(libs.roborazzi)
+    testImplementation(libs.roborazziCompose)
+    testImplementation(libs.roborazziJunitRule)
 }
